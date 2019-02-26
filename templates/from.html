@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>upload</title>
+  </head>
+  <body>
+    <form
+      method="post"
+      action="http://127.0.0.1:5000/api/batch_upload_file"
+      enctype="multipart/form-data"
+{#      target="nm_iframe"#}
+    >
+      文件：
+        <input type="file" name="file" multiple="multiple" />
+        <input type="hidden" value="123" name="djq">
+        <input type="submit" />
+    </form>
+    <iframe id="id_iframe" name="nm_iframe" style="display:none;"></iframe>
+    <script src="https://cdn.eic.org.cn/js/jquery-1.x.js"></script>
+
+  </body>
+</html>
